@@ -1,0 +1,40 @@
+.hero {
+  width: 100%;
+  height: 40em;
+  background: url("../images/hero-1.jpg"), radial-gradient(#afafaf, #8a8a8a);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1280px 853px;
+}
+
+.hero__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36em;
+  margin: auto 0;
+  text-align: center;
+}
+
+.hero__header {
+  color: var(--color-primary);
+  font-size: calc(3vw + 1rem);
+}
+
+.hero__subheader {
+  margin-top: 0.8rem;
+  color: var(--color-one);
+}
+/*# sourceMappingURL=Hero.module.css.map */

@@ -1,0 +1,82 @@
+:root {
+    --color-primary: #164d88;
+    --color-one: #efedea;
+    --color-two: #918e8a;
+    --color-accent: #ff8527;
+    --color-four: #cf9052;
+    --color-five: #3d2a1f;
+    --color-six: #b88c59;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+// GLOBAL CLASSES
+
+.app {
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 70%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.horizontal_spacer > * + * {
+    margin-left: var(--horizontal-space, 2em);
+}
+
+.vertical_spacer > * + * {
+    margin-top: var(--vertical-space, 2.5em);
+}
+
+.input {
+    border: none;
+    padding: 0.7rem 2rem;
+    background: var(--color-one, #fff);
+    color: var(--color-primary, #000);
+    border-radius: 5px;
+}
+
+.button {
+    border: none;
+    padding: 0.7rem 2rem;
+    background-color: var(--color-accent);
+    color: var(--color-one, #fff);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+
+    &:hover, &:focus {
+        transform: scale(1.1);
+    }
+}

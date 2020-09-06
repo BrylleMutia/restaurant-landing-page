@@ -1,0 +1,35 @@
+.navbar {
+    font-family: roboto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5em;
+    box-shadow: 0 0 1.5em rgba(#333, 0.2);
+    background: #fff;
+    // border: 1px solid red;
+
+    &__links {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 0;
+        margin: 1.3em 0;
+        // border: 1px solid red;
+    }
+
+    &__link {
+        a {
+            font-size: 0.9rem;
+            color: var(--color-two);
+            text-decoration: none;
+
+            &:hover, &:focus {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+.brand {
+    color: var(--color-primary);
+}
