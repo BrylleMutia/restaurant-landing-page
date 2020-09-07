@@ -1,8 +1,9 @@
 :root {
     --color-primary: #164d88;
+    --color-secondary: #227ddd;
+    --color-accent: #ff8527;
     --color-one: #efedea;
     --color-two: #918e8a;
-    --color-accent: #ff8527;
     --color-four: #cf9052;
     --color-five: #3d2a1f;
     --color-six: #b88c59;
@@ -47,9 +48,21 @@ p {
     width: 70%;
     max-width: 1040px;
     margin: 0 auto;
+
+    @media (max-width: 740px) {
+        width: 100%;
+    }
 }
 
-.horizontal_spacer > * + * {
+.side_padding {
+    padding: 0;
+
+    @media (max-width: 740px) {
+        padding: 5%;
+    }
+}
+
+.horizontal_spacer > * {
     margin-left: var(--horizontal-space, 2em);
 }
 
@@ -63,11 +76,15 @@ p {
     background: var(--color-one, #fff);
     color: var(--color-primary, #000);
     border-radius: 5px;
+    
+    @media (max-width: 740px) {
+        padding: 0.6em 1em;
+    }
 }
 
 .button {
     border: none;
-    padding: 0.7rem 2rem;
+    padding: 0.85em 2em;
     background-color: var(--color-accent);
     color: var(--color-one, #fff);
     text-decoration: none;
@@ -75,8 +92,13 @@ p {
     font-weight: 550;
     border-radius: 5px;
     transition: transform 250ms ease-in-out, opacity 250ms linear;
+    cursor: pointer;
 
     &:hover, &:focus {
         transform: scale(1.1);
+    }
+
+    @media (max-width: 740px) {
+        padding: 0.6em 1em;
     }
 }

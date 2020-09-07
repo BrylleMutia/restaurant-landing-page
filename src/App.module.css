@@ -1,8 +1,9 @@
 :root {
   --color-primary: #164d88;
+  --color-secondary: #227ddd;
+  --color-accent: #ff8527;
   --color-one: #efedea;
   --color-two: #918e8a;
-  --color-accent: #ff8527;
   --color-four: #cf9052;
   --color-five: #3d2a1f;
   --color-six: #b88c59;
@@ -48,7 +49,23 @@ p {
   margin: 0 auto;
 }
 
-.horizontal_spacer > * + * {
+@media (max-width: 740px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.side_padding {
+  padding: 0;
+}
+
+@media (max-width: 740px) {
+  .side_padding {
+    padding: 5%;
+  }
+}
+
+.horizontal_spacer > * {
   margin-left: var(--horizontal-space, 2em);
 }
 
@@ -64,9 +81,15 @@ p {
   border-radius: 5px;
 }
 
+@media (max-width: 740px) {
+  .input {
+    padding: 0.6em 1em;
+  }
+}
+
 .button {
   border: none;
-  padding: 0.7rem 2rem;
+  padding: 0.85em 2em;
   background-color: var(--color-accent);
   color: var(--color-one, #fff);
   text-decoration: none;
@@ -77,10 +100,17 @@ p {
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, opacity 250ms linear;
   transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  cursor: pointer;
 }
 
 .button:hover, .button:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 740px) {
+  .button {
+    padding: 0.6em 1em;
+  }
 }
 /*# sourceMappingURL=App.module.css.map */
