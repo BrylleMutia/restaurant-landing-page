@@ -7,6 +7,7 @@
   --color-four: #cf9052;
   --color-five: #3d2a1f;
   --color-six: #b88c59;
+  --color-seven: #FADABB;
 }
 
 body {
@@ -55,13 +56,30 @@ p {
   }
 }
 
+.flex_row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .side_padding {
   padding: 0;
 }
 
 @media (max-width: 740px) {
   .side_padding {
-    padding: 5%;
+    padding: 8%;
   }
 }
 
@@ -112,5 +130,16 @@ p {
   .button {
     padding: 0.6em 1em;
   }
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.link:hover, .link:focus {
+  color: rgba(255, 165, 0, 0.9);
 }
 /*# sourceMappingURL=App.module.css.map */

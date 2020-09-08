@@ -1,0 +1,81 @@
+.featured {
+    &__title {
+        display: flex;
+        gap: 4em;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5em 4em;
+        color: var(--color-primary);
+
+        h3 {
+            flex-basis: 100%;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 1.5em;
+        }
+        
+        @media (max-width: 790px) {
+            flex-direction: column;
+            gap: 2em;
+        }
+    }
+
+}
+
+.menu {
+    &__card {
+        width: 25%;
+        height: 15em;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 22%;
+        min-width: 200px;
+        justify-content: space-between;
+        box-shadow: 10px 10px 4em rgba(#000, 0.15);
+        // border: 1px solid red;
+    }
+
+    &__img {
+        flex-basis: 80%;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em;
+
+        h5 {
+            color: var(--color-primary);
+        }
+
+        p {
+            font-size: 0.7rem;
+            opacity: 0.6;
+        }
+    }
+
+    &__rating {
+        font-family: roboto;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--color-accent);
+        padding: 0.2em 1em;
+        align-self: center;
+        background-color: var(--color-seven);
+    }
+}
+
+.bestsellers {
+    &__header {
+        color: var(--color-primary);
+        margin: 5em 0 2em 0;
+    }
+
+    &__link {
+        align-self: center;
+        text-align: center;
+        flex-basis: 22%;
+        min-width: 200px;
+    }
+}
