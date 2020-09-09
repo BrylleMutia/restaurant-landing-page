@@ -1,0 +1,60 @@
+aside {
+    display: flex;
+}
+
+.download {
+    padding: 7em;
+    padding-right: 0;
+    background: var(--color-accent);
+    display: flex;
+
+    &__message {
+        color: #fff;
+        font-family: roboto;
+        flex-basis: 40%;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+
+        @media (max-width: 850px) {
+            flex-direction: column;
+            align-content: center;
+
+            & > * + * {
+                margin-left: 0;
+                margin-top: 1em;
+            }
+        }
+
+        @media (max-width: 740px) {
+            flex-direction: row;
+
+            & > * + * {
+                margin-left: 2em;
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__image {
+        width: 35%;
+        min-width: 330px;
+
+        @media (max-width: 740px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 740px) {
+        padding: 3em;
+    }
+}

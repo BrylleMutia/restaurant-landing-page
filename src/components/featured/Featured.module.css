@@ -61,6 +61,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5em;
+  background: #fff;
 }
 
 .menu__name h5 {
@@ -81,12 +82,25 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: var(--color-seven);
+  background-color: var(--color-rating);
+}
+
+.bestsellers {
+  background: var(--color-background);
+  padding: 7em 0;
+}
+
+.bestsellers::before {
+  content: "";
+  background: inherit;
+  position: relative;
+  padding: 14em 100% 0 0;
+  z-index: -1;
 }
 
 .bestsellers__header {
   color: var(--color-primary);
-  margin: 5em 0 2em 0;
+  margin: 0 0 2em 0;
 }
 
 .bestsellers__link {

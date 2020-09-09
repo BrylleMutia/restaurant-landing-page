@@ -36,50 +36,54 @@ const Featured = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className={cx(menu, flex_row)}>
-                            <div className={menu__card}>
-                                <img src={featuredOne} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Cherry Shortcake</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
+                    </div>
+                    <div className={cx(menu, flex_row)}>
+                        <div className={menu__card}>
+                            <img src={featuredOne} alt="menu-card" className={menu__img} />
+                            <div className={menu__name}>
+                                <div>
+                                    <h5>Cherry Shortcake</h5>
+                                    <p>Lorem ipsum dolor sit amet.</p>
                                 </div>
-                            </div>
-                            <div className={menu__card}>
-                                <img src={featuredTwo} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Cherry Shortcake</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
-                            </div>
-                            <div className={menu__card}>
-                                <img src={featuredOne} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Cherry Shortcake</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
-                            </div>
-                            <div className={menu__card}>
-                                <img src={featuredThree} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Cherry Shortcake</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
+                                <div className={menu__rating}>4.7</div>
                             </div>
                         </div>
+                        <div className={menu__card}>
+                            <img src={featuredTwo} alt="menu-card" className={menu__img} />
+                            <div className={menu__name}>
+                                <div>
+                                    <h5>Cherry Shortcake</h5>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div className={menu__rating}>4.7</div>
+                            </div>
+                        </div>
+                        <div className={menu__card}>
+                            <img src={featuredOne} alt="menu-card" className={menu__img} />
+                            <div className={menu__name}>
+                                <div>
+                                    <h5>Cherry Shortcake</h5>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div className={menu__rating}>4.7</div>
+                            </div>
+                        </div>
+                        <div className={menu__card}>
+                            <img src={featuredThree} alt="menu-card" className={menu__img} />
+                            <div className={menu__name}>
+                                <div>
+                                    <h5>Cherry Shortcake</h5>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div className={menu__rating}>4.7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div className={bestsellers}>
+                <div className={bestsellers}>
+                    <div className={side_padding}>
+                        <div className={container}>
                             <h3 className={bestsellers__header}>Our bestsellers</h3>
                             <div className={flex_row}>
                                 <div className={menu__card}>

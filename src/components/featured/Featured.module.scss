@@ -14,13 +14,12 @@
             font-size: 0.9rem;
             margin-bottom: 1.5em;
         }
-        
+
         @media (max-width: 790px) {
             flex-direction: column;
             gap: 2em;
         }
     }
-
 }
 
 .menu {
@@ -44,6 +43,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.5em;
+        background: #fff;
 
         h5 {
             color: var(--color-primary);
@@ -62,14 +62,25 @@
         color: var(--color-accent);
         padding: 0.2em 1em;
         align-self: center;
-        background-color: var(--color-seven);
+        background-color: var(--color-rating);
     }
 }
 
 .bestsellers {
+    background: var(--color-background);
+    padding: 7em 0;
+
+    &::before {
+        content: "";
+        background: inherit;
+        position: relative;
+        padding: 14em 100% 0 0;
+        z-index: -1;
+    }
+
     &__header {
         color: var(--color-primary);
-        margin: 5em 0 2em 0;
+        margin: 0 0 2em 0;
     }
 
     &__link {

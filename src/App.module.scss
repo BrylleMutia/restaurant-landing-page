@@ -2,12 +2,14 @@
     --color-primary: #164d88;
     --color-secondary: #227ddd;
     --color-accent: #ff8527;
+    --color-rating: #fadabb;
+    --color-background: #fff4e9;
+    --color-download: #e99555;
     --color-one: #efedea;
     --color-two: #918e8a;
     --color-four: #cf9052;
     --color-five: #3d2a1f;
     --color-six: #b88c59;
-    --color-seven: #FADABB;
 }
 
 body {
@@ -72,7 +74,11 @@ p {
     }
 }
 
-.horizontal_spacer > * {
+.horizontal_spacer_all > * {
+    margin-left: var(--horizontal-space, 2em);
+}
+
+.horizontal_spacer > * + * {
     margin-left: var(--horizontal-space, 2em);
 }
 
@@ -83,7 +89,7 @@ p {
 .input {
     border: none;
     padding: 0.7rem 2rem;
-    background: var(--color-one, #fff);
+    background: var(--color-input, #fff);
     color: var(--color-primary, #000);
     border-radius: 5px;
 
@@ -96,7 +102,7 @@ p {
     border: none;
     padding: 0.85em 2em;
     background-color: var(--color-accent);
-    color: var(--color-one, #fff);
+    color: var(--button-text, #fff);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 550;
