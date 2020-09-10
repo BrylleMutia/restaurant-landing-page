@@ -5,6 +5,7 @@ aside {
 .download {
     padding: 7em;
     padding-right: 0;
+    padding-bottom: 0;
     background: var(--color-accent);
     display: flex;
 
@@ -25,15 +26,15 @@ aside {
     &__buttons {
         display: flex;
 
-        @media (max-width: 850px) {
-            flex-direction: column;
-            align-content: center;
+        // @media (max-width: 850px) {
+        //     flex-direction: column;
+        //     align-content: center;
 
-            & > * + * {
-                margin-left: 0;
-                margin-top: 1em;
-            }
-        }
+        //     & > * + * {
+        //         margin-left: 0;
+        //         margin-top: 1em;
+        //     }
+        // }
 
         @media (max-width: 740px) {
             flex-direction: row;
@@ -43,6 +44,12 @@ aside {
                 margin-top: 0;
             }
         }
+    }
+
+    &__float {
+        width: 30%;
+        position: relative;
+        left: 5em;
     }
 
     &__image {

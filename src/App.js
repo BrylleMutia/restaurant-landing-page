@@ -4,6 +4,7 @@ import classes from './App.module.css';
 import Hero from "./components/hero/Hero";
 import Featured from "./components/featured/Featured";
 import Download from "./components/download/Download";
+import Grid from "./components/grid/Grid";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 		  <Hero />
       <Featured />
       <Download />
+      <Grid />
     </div>
   );
 }

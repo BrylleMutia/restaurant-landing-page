@@ -32,7 +32,7 @@ const Featured = () => {
                                     rerum animi non tempore itaque dolore maiores deserunt?
                                 </p>
                                 <a href="#" className={link}>
-                                    Learn more >
+                                    Learn More >
                                 </a>
                             </div>
                         </div>
@@ -119,7 +119,7 @@ const Featured = () => {
                                     </div>
                                 </div>
                                 <a className={cx(link, bestsellers__link)} href="#">
-                                    View all >
+                                    View All >
                                 </a>
                             </div>
                         </div>
