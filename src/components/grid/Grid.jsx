@@ -4,16 +4,16 @@ import { flex_column, link, vertical_spacer } from "../../App.module.css";
 
 import cx from "classnames";
 
-import gridOne from "../images/featured/featured-6.jpg";
-import gridTwo from "../images/featured/featured-5.jpg";
-import gridThree from "../images/featured/featured-7.jpg";
+import gridOne from "../images/grid/grid-2.jpg";
+import gridTwo from "../images/grid/grid-3.jpg";
+import gridThree from "../images/grid/grid-4.jpg";
 
 const Grid = () => {
     return (
         <aside>
             <div className={grid}>
                 <div className={cx(flex_column, grid__one)}>
-                    <img src={gridOne} alt="grid-one" />
+                    <img src={gridTwo} alt="grid-two" />
                 </div>
                 <div className={cx(flex_column, grid__two)}></div>
                 <div className={cx(flex_column, grid__three)}>
@@ -21,7 +21,7 @@ const Grid = () => {
                     <p>Lorem ipsum dolor sit.</p>
                 </div>
                 <div className={cx(flex_column, grid__four)}>
-                    <img src={gridTwo} alt="grid-two" />
+                    <img src={gridOne} alt="grid-one" />
                 </div>
                 <div className={cx(flex_column, grid__five)}>
                     <img src={gridThree} alt="grid-three" />

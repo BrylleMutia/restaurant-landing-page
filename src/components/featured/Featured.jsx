@@ -16,6 +16,7 @@ import { container, flex_row, link, side_padding } from "../../App.module.css";
 import featuredOne from "../images/featured/featured-1.jpg";
 import featuredTwo from "../images/featured/featured-2.jpg";
 import featuredThree from "../images/featured/featured-3.jpg";
+import featuredFour from "../images/featured/featured-4.jpg";
 import cx from "classnames";
 
 const Featured = () => {
@@ -60,7 +61,7 @@ const Featured = () => {
                                 </div>
                             </div>
                             <div className={menu__card}>
-                                <img src={featuredOne} alt="menu-card" className={menu__img} />
+                                <img src={featuredThree} alt="menu-card" className={menu__img} />
                                 <div className={menu__name}>
                                     <div>
                                         <h5>Cherry Shortcake</h5>
@@ -70,7 +71,7 @@ const Featured = () => {
                                 </div>
                             </div>
                             <div className={menu__card}>
-                                <img src={featuredThree} alt="menu-card" className={menu__img} />
+                                <img src={featuredFour} alt="menu-card" className={menu__img} />
                                 <div className={menu__name}>
                                     <div>
                                         <h5>Cherry Shortcake</h5>

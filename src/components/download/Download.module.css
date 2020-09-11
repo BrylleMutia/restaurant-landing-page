@@ -5,9 +5,7 @@ aside {
 }
 
 .download {
-  padding: 7em;
-  padding-right: 0;
-  padding-bottom: 0;
+  padding: 5em 0 0 12em;
   background: var(--color-accent);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,14 +47,14 @@ aside {
 }
 
 .download__float {
-  width: 30%;
+  width: 100%;
   position: relative;
-  left: 5em;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.35));
 }
 
 .download__image {
-  width: 35%;
-  min-width: 330px;
+  min-width: 480px;
 }
 
 @media (max-width: 740px) {

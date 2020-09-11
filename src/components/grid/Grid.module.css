@@ -51,8 +51,8 @@
 .grid__three p {
   font-size: 0.7rem;
   color: var(--color-primary);
-  opacity: 0.8;
   padding-left: 7%;
+  opacity: 0.8;
 }
 
 .grid__four {

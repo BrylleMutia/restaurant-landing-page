@@ -3,7 +3,8 @@ import { download, download__buttons, download__image, download__message, downlo
 import { container, side_padding, vertical_spacer, horizontal_spacer, button, flex_row, img_button } from "../../App.module.css";
 
 import cx from "classnames";
-import downloadOne from "../images/featured/featured-1.jpg";
+import downloadOne from "../images/download/download-1.jpg";
+import app from "../images/app.png";
 import playstore from "../images/download/playstore.png";
 import appstore from "../images/download/appstore.png";
 
@@ -26,21 +27,17 @@ const Download = () => {
                                 <button style={{ "--color-accent": "#000" }} className={button}>
                                     Play Store
                                 </button> */}
-                                <button className={img_button}>
-                                    <a href="#">
-                                        <img src={appstore} alt="download-appstore" />
-                                    </a>
-                                </button>
-                                <button className={img_button}>
-                                    <a href="#">
-                                        <img src={playstore} alt="download-playstore" />
-                                    </a>
-                                </button>
+                                <a href="#" className={img_button}>
+                                    <img src={appstore} alt="download-appstore" />
+                                </a>
+                                <a href="#" className={img_button}>
+                                    <img src={playstore} alt="download-playstore" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img className={download__float} src={downloadOne} alt="phone-img" />
+                <img className={download__float} src={app} alt="phone-img" />
             </div>
             <img className={download__image} src={downloadOne} alt="download-app" />
         </aside>
