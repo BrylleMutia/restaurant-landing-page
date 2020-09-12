@@ -4,6 +4,15 @@ aside {
   display: flex;
 }
 
+@media (max-width: 1000px) {
+  aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .download {
   padding: 5em 0 0 12em;
   background: var(--color-accent);
@@ -17,6 +26,7 @@ aside {
   font-family: roboto;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  margin: 2em 0;
 }
 
 .download__message h3 {
@@ -27,45 +37,65 @@ aside {
   font-size: 0.85rem;
 }
 
+@media (max-width: 1000px) {
+  .download__message {
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .download__message {
+    margin-bottom: 2em;
+  }
+}
+
 .download__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 350px) {
   .download__buttons {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .download__buttons > * + * {
-    margin-left: 2em;
-    margin-top: 0;
+    margin-left: 0;
+    margin-top: 1em;
   }
 }
 
 .download__float {
   width: 100%;
-  position: relative;
   -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.35));
           filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.35));
 }
 
 .download__image {
+  margin-left: -15em;
   min-width: 480px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 1000px) {
   .download__image {
     display: none;
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 900px) {
   .download {
-    padding: 3em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    padding-top: 3em;
   }
 }
 /*# sourceMappingURL=Download.module.css.map */

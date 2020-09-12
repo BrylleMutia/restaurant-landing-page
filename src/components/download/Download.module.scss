@@ -1,5 +1,9 @@
 aside {
     display: flex;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 }
 
 .download {
@@ -11,6 +15,7 @@ aside {
         color: #fff;
         font-family: roboto;
         flex-basis: 40%;
+        margin: 2em 0;
 
         h3 {
             font-size: 1.5rem;
@@ -19,46 +24,50 @@ aside {
         p {
             font-size: 0.85rem;
         }
+
+        @media (max-width: 1000px) {
+            margin-bottom: 5em;
+        }
+
+        @media (max-width: 900px) {
+            margin-bottom: 2em;
+        }
     }
 
     &__buttons {
         display: flex;
 
-        // @media (max-width: 850px) {
-        //     flex-direction: column;
-        //     align-content: center;
-
-        //     & > * + * {
-        //         margin-left: 0;
-        //         margin-top: 1em;
-        //     }
-        // }
-
-        @media (max-width: 740px) {
-            flex-direction: row;
-
+        @media (max-width: 350px) {
+            flex-direction: column;
+            align-items: center;
+            
             & > * + * {
-                margin-left: 2em;
-                margin-top: 0;
+                margin-left: 0;
+                margin-top: 1em;
             }
         }
     }
 
     &__float {
         width: 100%;
-        position: relative;
+        // min-width: 564px;
         filter: drop-shadow(0 0 10px rgba(black, 0.35))
     }
 
     &__image {
+        // flex-basis: 100%;
+        // width: 100%;
+        margin-left: -15em;
         min-width: 480px;
 
-        @media (max-width: 740px) {
+        @media (max-width: 1000px) {
             display: none;
         }
     }
 
-    @media (max-width: 740px) {
-        padding: 3em;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 3em;
     }
 }

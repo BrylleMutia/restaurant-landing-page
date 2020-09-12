@@ -17,7 +17,7 @@ const Grid = () => {
                 </div>
                 <div className={cx(flex_column, grid__two)}></div>
                 <div className={cx(flex_column, grid__three)}>
-                    <h5>Lorem ipsum dolor sit amet consectetur? </h5>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
                     <p>Lorem ipsum dolor sit.</p>
                 </div>
                 <div className={cx(flex_column, grid__four)}>
