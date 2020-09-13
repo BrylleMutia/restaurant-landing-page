@@ -1,0 +1,42 @@
+.affiliates {
+    padding: 5em;
+
+    &__header {
+        font-family: roboto;
+        text-align: center;
+        margin-bottom: 4em;
+        color: var(--color-primary);
+
+        h1 {
+            opacity: 0.9;
+        }
+
+        p {
+            margin: 1.5em 3.5em;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 900px) {
+            p {
+                margin: 1.5em 1em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: calc(2vw + 0.7rem);
+            }
+            
+            p {
+                font-size: calc(1.5vw + 0.5rem);
+            }
+        }
+    }
+
+    &__main {
+    }
+
+    @media (max-width: 900px) {
+        padding: 5em 0;
+    }
+}

@@ -10,12 +10,12 @@ import gridThree from "../images/grid/grid-4.jpg";
 
 const Grid = () => {
     return (
-        <aside>
-            <div className={grid}>
-                <div className={cx(flex_column, grid__one)}>
+        <content>
+            <div style={{ "--column-align": "start" }} className={grid}>
+                <div className={grid__one}>
                     <img src={gridTwo} alt="grid-two" />
                 </div>
-                <div className={cx(flex_column, grid__two)}></div>
+                <div className={grid__two}></div>
                 <div className={cx(flex_column, grid__three)}>
                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
                     <p>Lorem ipsum dolor sit.</p>
@@ -40,7 +40,7 @@ const Grid = () => {
                     </a>
                 </div>
             </div>
-        </aside>
+        </content>
     );
 };
 

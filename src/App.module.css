@@ -1,7 +1,8 @@
 :root {
   --color-primary: #164d88;
   --color-secondary: #227ddd;
-  --color-accent: #ff8527;
+  --color-accent: #ff9340;
+  --color-hover: #ff8527;
   --color-rating: #fadabb;
   --color-background: #fff4e9;
   --color-download: #e99555;
@@ -68,15 +69,19 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: var(--row-justify, center);
+      -ms-flex-pack: var(--row-justify, center);
+          justify-content: var(--row-justify, center);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: var(--flex-gap, 2em);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .flex_column {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +92,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: var(--column-align, center);
+      -ms-flex-align: var(--column-align, center);
+          align-items: var(--column-align, center);
   gap: var(--flex-gap, 0.7em);
 }
 
@@ -134,7 +142,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 550;
-  border-radius: 5px;
+  border-radius: var(--button-radius, 5px);
   -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, opacity 250ms linear;

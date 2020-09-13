@@ -5,6 +5,8 @@ import Hero from "./components/hero/Hero";
 import Featured from "./components/featured/Featured";
 import Download from "./components/download/Download";
 import Grid from "./components/grid/Grid";
+import Affiliates from "./components/affiliates/Affiliates";
+import CallToAction from './components/callToAction/CallToAction';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Featured />
       <Download />
       <Grid />
+      <Affiliates />
+      <CallToAction />
     </div>
   );
 }
