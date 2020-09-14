@@ -7,6 +7,7 @@ import Download from "./components/download/Download";
 import Grid from "./components/grid/Grid";
 import Affiliates from "./components/affiliates/Affiliates";
 import CallToAction from './components/callToAction/CallToAction';
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Grid />
       <Affiliates />
       <CallToAction />
+      <Footer />
     </div>
   );
 }

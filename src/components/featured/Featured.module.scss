@@ -32,7 +32,11 @@
         min-width: 200px;
         justify-content: space-between;
         box-shadow: 10px 10px 4em rgba(#000, 0.15);
-        // border: 1px solid red;
+        transition: transform 200ms ease-in-out;
+        
+        &:hover, &:focus {
+            transform: scale(1.2);
+        }
     }
 
     &__img {

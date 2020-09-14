@@ -1,0 +1,60 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "contact contact none links links links"
+        "download download none links links links";
+    align-items: center;
+    margin-top: 3em;
+
+    &__contact {
+        grid-area: contact;
+        padding-top: 4em;
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--color-primary);
+        }
+
+        .contact_icons {
+            display: flex;
+            padding-top: 1em;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    &__download {
+        grid-area: download;
+        display: flex;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    &__links {
+        grid-area: links;
+        display: flex;
+    }
+
+    &__link {
+        padding: 2em;
+        font-family: roboto;
+        
+        a {
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+        
+        p {
+            color: var(--color-primary);
+            margin-top: 1em;
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+    }
+}

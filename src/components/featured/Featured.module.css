@@ -46,6 +46,15 @@
           justify-content: space-between;
   -webkit-box-shadow: 10px 10px 4em rgba(0, 0, 0, 0.15);
           box-shadow: 10px 10px 4em rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.menu__card:hover, .menu__card:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .menu__img {

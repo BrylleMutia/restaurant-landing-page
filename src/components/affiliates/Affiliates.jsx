@@ -4,6 +4,12 @@ import { container, side_padding, flex_column, flex_row } from "../../App.module
 
 import cx from "classnames";
 
+import google from "../images/affiliates/google.png";
+import amazon from "../images/affiliates/amazon.png";
+import cocacola from "../images/affiliates/cocacola.png";
+import instagram from "../images/affiliates/instagram.png";
+import paypal from "../images/affiliates/paypal.png";
+
 const Affiliates = () => {
     return (
         <aside>
@@ -16,14 +22,24 @@ const Affiliates = () => {
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum in, perspiciatis voluptate quibusdam totam voluptas.
                             </p>
                         </div>
-                        <div className={cx(flex_row, affiliates__main)}>
-                            <h5>GOOGLE</h5>
-                            <h5>MICROSOFT</h5>
-                            <h5>FACEBOOK</h5>
-                            <h5>CISCO</h5>
-                            <h5>APPLE</h5>
+                        <div style={{ "--flex-gap": "0" }} className={cx(flex_row, affiliates__main)}>
+                            <a href="#">
+                                <img src={google} alt="google" />
+                            </a>
+                            <a href="#">
+                                <img src={paypal} alt="paypal" />
+                            </a>
+                            <a href="#">
+                                <img src={cocacola} alt="cocacola" />
+                            </a>
+                            <a href="#">
+                                <img src={amazon} alt="amazon" />
+                            </a>
+                            <a href="#">
+                                <img src={instagram} alt="instagram" />
+                            </a>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </aside>
