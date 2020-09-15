@@ -19,27 +19,27 @@ const Footer = () => {
                 <div className={side_padding}>
                     <div className={footer}>
                         <div className={footer__contact}>
-                            <h3>Totsuki Academy</h3>
+                            <h3>Foodemy!</h3>
                             <div className={contact_icons}>
-                                <a href="#">
+                                <a href="https://facebook.com">
                                     <img src={facebook} alt="contact-facebook" />
                                 </a>
-                                <a href="#">
+                                <a href="https://twitter.com">
                                     <img src={twitter} alt="contact-twitter" />
                                 </a>
-                                <a href="#">
+                                <a href="https://gmail.com">
                                     <img src={gmail} alt="contact-gmail" />
                                 </a>
-                                <a href="#">
+                                <a href="https://linkedin.com">
                                     <img src={linkedin} alt="contact-linkedin" />
                                 </a>
                             </div>
                         </div>
                         <div className={footer__download}>
-                            <a href="#">
+                            <a href="https://www.apple.com">
                                 <img src={appstore} alt="appstore" />
                             </a>
-                            <a href="#">
+                            <a href="https://play.google.com">
                                 <img src={playstore} alt="playstore" />
                             </a>
                         </div>

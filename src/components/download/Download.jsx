@@ -17,8 +17,7 @@ const Download = () => {
                         <div style={{ "--vertical-space": "1.5em" }} className={cx(vertical_spacer, download__message)}>
                             <h3>Download Our App</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid in fuga iste, consequuntur perspiciatis quae at
-                                similique fugiat molestiae praesentium.
+                                For an easier access to our menu, reservations, and details about the restaurant, we made an app just for you! No more going through hassle, we're just an app away.
                             </p>
                             <div style={{ "--horizontal-space": "1em" }} className={cx(horizontal_spacer, download__buttons)}>
                                 {/* <button style={{ "--color-accent": "#fff", "--button-text": "#000" }} className={button}>
@@ -27,10 +26,10 @@ const Download = () => {
                                 <button style={{ "--color-accent": "#000" }} className={button}>
                                     Play Store
                                 </button> */}
-                                <a href="#" className={img_button}>
+                                <a href="https://www.apple.com" className={img_button}>
                                     <img src={appstore} alt="download-appstore" />
                                 </a>
-                                <a href="#" className={img_button}>
+                                <a href="https://play.google.com" className={img_button}>
                                     <img src={playstore} alt="download-playstore" />
                                 </a>
                             </div>

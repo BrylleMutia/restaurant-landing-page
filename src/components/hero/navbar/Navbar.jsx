@@ -14,20 +14,20 @@ const Navbar = () => {
         <nav>
             <div className={navbar} style={{ height: isOpen && "11.6em" }}>
                 <div className={navbar__div}>
-                    <h3 className={brand}>Totsuki Academy</h3>
+                    <h3 className={brand}>Foodemy!</h3>
                     <div className={cx(menu, isOpen && menu__open)} onClick={handleOpenMenu}>
                         <div className={menu__hamburger}></div>
                     </div>
                 </div>
                 <ul className={cx(navbar__links, horizontal_spacer)} style={{ opacity: isOpen || window.innerWidth > 740 ? "1" : "0" }}>
                     <li className={navbar__link}>
-                        <a href="#">About Us</a>
+                        <a href="#about">About Us</a>
                     </li>
                     <li className={navbar__link}>
-                        <a href="#">Our Menu</a>
+                        <a href="#menu">Our Menu</a>
                     </li>
                     <li className={navbar__link}>
-                        <a href="#">Reservations</a>
+                        <a href="#reservation">Reservations</a>
                     </li>
                 </ul>
             </div>

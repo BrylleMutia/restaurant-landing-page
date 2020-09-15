@@ -4,13 +4,13 @@
   display: flex;
   gap: 4em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 5em 4em;
+  padding: 5em 7%;
   color: var(--color-primary);
 }
 
 .featured__title h3 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 
 .featured__title p {
@@ -50,6 +50,7 @@
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .menu__card:hover, .menu__card:focus {

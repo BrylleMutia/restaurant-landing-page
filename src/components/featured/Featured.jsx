@@ -27,15 +27,14 @@ import cx from "classnames";
 const Featured = () => {
     return (
         <main>
-            <div className={featured}>
+            <div className={featured} id="menu">
                 <div className={container}>
                     <div className={side_padding}>
                         <div style={{ "--horizontal-space": "4em" }} className={featured__title}>
                             <h3>Check out these lavish dishes from our menu</h3>
                             <div>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni reprehenderit harum at! Hic enim optio id
-                                    rerum animi non tempore itaque dolore maiores deserunt?
+                                    These dishes were delicately made by our top chefs that served us through the years, catered for the satisfaction of our dear customers.
                                 </p>
                                 <a href="#" className={link}>
                                     Learn More >

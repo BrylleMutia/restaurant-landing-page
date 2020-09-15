@@ -8,14 +8,14 @@ const CallToAction = () => {
     return (
         <div className={container}>
             <div className={side_padding}>
-                <div style={{ "--row-justify": "space-evenly" }} className={cx(flex_row, action)}>
+                <div style={{ "--row-justify": "space-evenly" }} className={cx(flex_row, action)} id="reservation">
                     <div style={{ "--vertical-space": "0.5em" }} className={cx(vertical_spacer, action__text)}>
-                        <h3>Ready to get started?</h3>
-                        <p>Subscribe to our weekly newsletter!</p>
+                        <h3>Book a reservation now!</h3>
+                        <p> We'll ask for details through email.</p>
                     </div>
                     <form className={action__form} action="POST">
                         <input type="email" name="email" id="email" placeholder="Enter your email" />
-                        <button style={{ "--button-radius": "0" }} className={button} type="submit">Subscribe</button>
+                        <button style={{ "--button-radius": "0" }} className={button} type="submit">add reservation</button>
                     </form>
                 </div>
             </div>

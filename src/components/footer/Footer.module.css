@@ -111,6 +111,10 @@
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "contact" "download" "links";
   }
+  .footer__contact {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
   .footer__download {
     width: 75%;
   }

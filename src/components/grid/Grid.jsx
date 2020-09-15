@@ -11,14 +11,14 @@ import gridThree from "../images/grid/grid-4.jpg";
 const Grid = () => {
     return (
         <content>
-            <div style={{ "--column-align": "start" }} className={grid}>
+            <div style={{ "--column-align": "start" }} className={grid} id="about">
                 <div className={grid__one}>
                     <img src={gridTwo} alt="grid-two" />
                 </div>
                 <div className={grid__two}></div>
                 <div className={cx(flex_column, grid__three)}>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                    <p>Lorem ipsum dolor sit.</p>
+                    <h5>"Their desserts were something to return to..."</h5>
+                    <p>- Grace Dent (Gourmet Critic)</p>
                 </div>
                 <div className={cx(flex_column, grid__four)}>
                     <img src={gridOne} alt="grid-one" />
@@ -27,16 +27,16 @@ const Grid = () => {
                     <img src={gridThree} alt="grid-three" />
                 </div>
                 <div className={cx(flex_column, grid__six)}>
-                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing. </h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>"Such fine details in every dish! What more could I ask for?"</h5>
+                    <p>- Andy Hayler (Gourmet Critic)</p>
                 </div>
                 <div style={{ "--vertical-space": "1.5em" }} className={cx(flex_column, vertical_spacer, grid__seven)}>
-                    <h4>Restaurant Travel Guide</h4>
+                    <h4>Foodemy all the way!</h4>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quos eum laboriosam aliquam, saepe itaque incidunt rerum deleniti autem nemo repellendus, placeat sed perspiciatis culpa.
+                        Foodemy was established by Brylle Mutia and colleagues way back May 2010. We have served thousands of customers throughout those years, and nothing compares to seeing them satisfied with the food we make.
                     </p>
                     <a href="#" className={link}>
-                        Learn More >
+                        More About Us >
                     </a>
                 </div>
             </div>

@@ -19,23 +19,23 @@ const Affiliates = () => {
                         <div className={affiliates__header}>
                             <h1>Be one of our business partners.</h1>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum in, perspiciatis voluptate quibusdam totam voluptas.
+                                Some of the companies that worked with us to deliver better products for our beloved customers. 
                             </p>
                         </div>
                         <div style={{ "--flex-gap": "0" }} className={cx(flex_row, affiliates__main)}>
-                            <a href="#">
+                            <a href="https://google.com">
                                 <img src={google} alt="google" />
                             </a>
-                            <a href="#">
+                            <a href="https://paypal.com">
                                 <img src={paypal} alt="paypal" />
                             </a>
-                            <a href="#">
+                            <a href="https://coca-colacompany.com">
                                 <img src={cocacola} alt="cocacola" />
                             </a>
-                            <a href="#">
+                            <a href="https://amazon.com">
                                 <img src={amazon} alt="amazon" />
                             </a>
-                            <a href="#">
+                            <a href="https://instagram.com">
                                 <img src={instagram} alt="instagram" />
                             </a>
                         </div>

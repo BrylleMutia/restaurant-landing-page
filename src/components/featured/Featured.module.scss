@@ -3,11 +3,11 @@
         display: flex;
         gap: 4em;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        padding: 5em 4em;
+        padding: 5em 7%;
         color: var(--color-primary);
 
         h3 {
-            flex-basis: 100%;
+            flex-basis: 70%;
         }
 
         p {
@@ -33,6 +33,7 @@
         justify-content: space-between;
         box-shadow: 10px 10px 4em rgba(#000, 0.15);
         transition: transform 200ms ease-in-out;
+        cursor: pointer;
         
         &:hover, &:focus {
             transform: scale(1.2);

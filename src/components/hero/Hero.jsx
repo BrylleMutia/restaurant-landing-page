@@ -14,7 +14,7 @@ const Hero = () => {
                     <div className={side_padding}>
                         <div className={cx(hero__title, vertical_spacer)}>
                             <h3 className={hero__header}>Food for Every Craving</h3>
-                            <p className={hero__subheader}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, rem?</p>
+                            <p className={hero__subheader}>The best restaurant in town is here to satisfy your cravings!</p>
                             <form className={hero__form}>
                                 <input
                                     style={{ borderBottomRightRadius: "0", borderTopRightRadius: "0" }}
