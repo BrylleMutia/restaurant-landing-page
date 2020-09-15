@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "contact contact none links links links"
         "download download none links links links";
     align-items: center;
@@ -39,22 +39,62 @@
     &__links {
         grid-area: links;
         display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
     &__link {
-        padding: 2em;
         font-family: roboto;
-        
+        color: var(--color-primary);
+
+        h4 {
+            color: inherit;
+        }
+
         a {
             text-decoration: none;
-            color: var(--color-primary);
+            color: inherit;
         }
-        
+
         p {
-            color: var(--color-primary);
+            color: inherit;
             margin-top: 1em;
             font-weight: 400;
             font-size: 0.8rem;
+
+            &:hover,
+            &:focus {
+                color: var(--color-hover);
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "contact download"
+            "links links";
+
+        &__contact {
+            padding-top: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "contact"
+            "download"
+            "links";
+
+        &__contact {
+            align-self: flex-end;
+        }
+
+        &__download {
+            width: 75%;
         }
     }
 }
