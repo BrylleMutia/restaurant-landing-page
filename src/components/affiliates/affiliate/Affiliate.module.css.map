@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,KAAK;CAWnB;;AAbD,AAII,UAJM,CAIN,GAAG,CAAC;EACA,OAAO,EAAE,WAAW;CAOvB;;AAZL,AAOQ,UAPE,CAIN,GAAG,AAGE,MAAM,EAPf,UAAU,CAIN,GAAG,AAIE,MAAM,CAAC;EACJ,SAAS,EAAE,UAAU;EACrB,UAAU,EAAE,CAAC,CAAC,CAAC,CAAC,IAAI,CAAM,qBAAI;CACjC",
+    "sources": [
+        "Affiliate.module.scss"
+    ],
+    "names": [],
+    "file": "Affiliate.module.css"
+}

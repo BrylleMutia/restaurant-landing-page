@@ -22,55 +22,6 @@
     }
 }
 
-.menu {
-    &__card {
-        width: 25%;
-        height: 15em;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 22%;
-        min-width: 200px;
-        justify-content: space-between;
-        box-shadow: 10px 10px 4em rgba(#000, 0.15);
-        transition: transform 200ms ease-in-out;
-        cursor: pointer;
-        
-        &:hover, &:focus {
-            transform: scale(1.2);
-        }
-    }
-
-    &__img {
-        flex-basis: 80%;
-    }
-
-    &__name {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5em;
-        background: #fff;
-
-        h5 {
-            color: var(--color-primary);
-        }
-
-        p {
-            font-size: 0.7rem;
-            opacity: 0.6;
-        }
-    }
-
-    &__rating {
-        font-family: roboto;
-        font-size: 0.8rem;
-        font-weight: 700;
-        color: var(--color-accent);
-        padding: 0.2em 1em;
-        align-self: center;
-        background-color: var(--color-rating);
-    }
-}
-
 .bestsellers {
     background: var(--color-background);
     padding: 7em 0;

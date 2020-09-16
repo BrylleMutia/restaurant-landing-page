@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-    featured,
     featured__title,
     menu,
-    menu__card,
-    menu__img,
-    menu__name,
-    menu__rating,
     bestsellers,
     bestsellers__header,
     bestsellers__link,
 } from "./Featured.module.css";
 import { container, flex_row, link, side_padding } from "../../App.module.css";
+
+import Card from "./card/Card";
 
 import featuredOne from "../images/featured/featured-5.jpg";
 import featuredTwo from "../images/featured/featured-6.jpg";
@@ -25,6 +22,54 @@ import bestsellerThree from "../images/featured/featured-4.jpg";
 import cx from "classnames";
 
 const Featured = () => {
+    const [featured, setFeatured] = useState([
+        {
+            recipeName: "Recipe Name",
+            image: featuredOne,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.5,
+        },
+        {
+            recipeName: "Recipe Name",
+            image: featuredTwo,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.4,
+        },
+        {
+            recipeName: "Recipe Name",
+            image: featuredThree,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.4,
+        },
+        {
+            recipeName: "Recipe Name",
+            image: featuredFour,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.6,
+        },
+    ]);
+
+    const [best, setBest] = useState([
+        {
+            recipeName: "Recipe Name",
+            image: bestsellerOne,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.9,
+        },
+        {
+            recipeName: "Recipe Name",
+            image: bestsellerTwo,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.7,
+        },
+        {
+            recipeName: "Recipe Name",
+            image: bestsellerThree,
+            description: "Lorem ipsum dolor sit amet.",
+            rating: 4.7,
+        },
+    ]);
+
     return (
         <main>
             <div className={featured} id="menu">
@@ -34,7 +79,8 @@ const Featured = () => {
                             <h3>Check out these lavish dishes from our menu</h3>
                             <div>
                                 <p>
-                                    These dishes were delicately made by our top chefs that served us through the years, catered for the satisfaction of our dear customers.
+                                    These dishes were delicately made by our top chefs that served us through the years, catered for the satisfaction
+                                    of our dear customers.
                                 </p>
                                 <a href="#" className={link}>
                                     Learn More >
@@ -44,46 +90,14 @@ const Featured = () => {
                     </div>
                     <div className={side_padding}>
                         <div className={cx(menu, flex_row)}>
-                            <div className={menu__card}>
-                                <img src={featuredOne} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Recipe Name</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
-                            </div>
-                            <div className={menu__card}>
-                                <img src={featuredTwo} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Recipe Name</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
-                            </div>
-                            <div className={menu__card}>
-                                <img src={featuredThree} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Recipe Name</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
-                            </div>
-                            <div className={menu__card}>
-                                <img src={featuredFour} alt="menu-card" className={menu__img} />
-                                <div className={menu__name}>
-                                    <div>
-                                        <h5>Recipe Name</h5>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                    <div className={menu__rating}>4.7</div>
-                                </div>
-                            </div>
+                            {featured.map((recipe) => (
+                                <Card 
+                                    recipeName={recipe.recipeName} 
+                                    image={recipe.image} 
+                                    description={recipe.description} 
+                                    rating={recipe.rating} 
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -93,36 +107,14 @@ const Featured = () => {
                         <div className={container}>
                             <h3 className={bestsellers__header}>Our bestsellers</h3>
                             <div className={flex_row}>
-                                <div className={menu__card}>
-                                    <img src={bestsellerTwo} alt="menu-card" className={menu__img} />
-                                    <div className={menu__name}>
-                                        <div>
-                                            <h5>Recipe Name</h5>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </div>
-                                        <div className={menu__rating}>4.7</div>
-                                    </div>
-                                </div>
-                                <div className={menu__card}>
-                                    <img src={bestsellerOne} alt="menu-card" className={menu__img} />
-                                    <div className={menu__name}>
-                                        <div>
-                                            <h5>Recipe Name</h5>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </div>
-                                        <div className={menu__rating}>4.7</div>
-                                    </div>
-                                </div>
-                                <div className={menu__card}>
-                                    <img src={bestsellerThree} alt="menu-card" className={menu__img} />
-                                    <div className={menu__name}>
-                                        <div>
-                                            <h5>Recipe Name</h5>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </div>
-                                        <div className={menu__rating}>4.7</div>
-                                    </div>
-                                </div>
+                                {best.map((recipe) => (
+                                    <Card
+                                        recipeName={recipe.recipeName}
+                                        image={recipe.image}
+                                        description={recipe.description}
+                                        rating={recipe.rating}
+                                    />
+                                ))}
                                 <a className={cx(link, bestsellers__link)} href="#">
                                     View All >
                                 </a>
