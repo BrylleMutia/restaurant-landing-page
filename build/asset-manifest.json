@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.723a9ea4.chunk.css",
+    "main.js": "/static/js/main.946a20b1.chunk.js",
+    "main.js.map": "/static/js/main.946a20b1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4560eeac.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4560eeac.js.map",
+    "static/js/2.deeae5b9.chunk.js": "/static/js/2.deeae5b9.chunk.js",
+    "static/js/2.deeae5b9.chunk.js.map": "/static/js/2.deeae5b9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.14ebc217f806fcc6c89475bd4e7bcf4c.js": "/precache-manifest.14ebc217f806fcc6c89475bd4e7bcf4c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.723a9ea4.chunk.css.map": "/static/css/main.723a9ea4.chunk.css.map",
+    "static/js/2.deeae5b9.chunk.js.LICENSE.txt": "/static/js/2.deeae5b9.chunk.js.LICENSE.txt",
+    "static/media/amazon.png": "/static/media/amazon.84db200c.png",
+    "static/media/app.png": "/static/media/app.083eeb18.png",
+    "static/media/appstore.png": "/static/media/appstore.09afc88d.png",
+    "static/media/cocacola.png": "/static/media/cocacola.1398cf1c.png",
+    "static/media/download-1.jpg": "/static/media/download-1.f8e42a10.jpg",
+    "static/media/featured-1.jpg": "/static/media/featured-1.563771eb.jpg",
+    "static/media/featured-2.jpg": "/static/media/featured-2.76400b9e.jpg",
+    "static/media/featured-3.jpg": "/static/media/featured-3.9a666920.jpg",
+    "static/media/featured-4.jpg": "/static/media/featured-4.9758f479.jpg",
+    "static/media/featured-5.jpg": "/static/media/featured-5.57ce63b6.jpg",
+    "static/media/featured-6.jpg": "/static/media/featured-6.04eb4b73.jpg",
+    "static/media/featured-7.jpg": "/static/media/featured-7.5492a2ff.jpg",
+    "static/media/grid-2.jpg": "/static/media/grid-2.579b96e8.jpg",
+    "static/media/grid-3.jpg": "/static/media/grid-3.bcfc69e7.jpg",
+    "static/media/grid-4.jpg": "/static/media/grid-4.88da6bce.jpg",
+    "static/media/Hero.module.css": "/static/media/hero-1.71d571c7.jpg",
+    "static/media/instagram.png": "/static/media/instagram.ec7376fd.png",
+    "static/media/playstore.png": "/static/media/playstore.cd839006.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4560eeac.js",
+    "static/js/2.deeae5b9.chunk.js",
+    "static/css/main.723a9ea4.chunk.css",
+    "static/js/main.946a20b1.chunk.js"
+  ]
+}
