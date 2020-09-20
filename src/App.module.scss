@@ -64,6 +64,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
 
+    // if gap is unsupported
     & > * {
         margin-top: 2em;
     }
