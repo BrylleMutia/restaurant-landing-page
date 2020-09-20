@@ -62,8 +62,19 @@ p {
     flex-direction: row;
     justify-content: var(--row-justify, center);
     align-items: center;
-    gap: var(--flex-gap, 2em);
     flex-wrap: wrap;
+
+    & > * {
+        margin-top: 2em;
+    }
+
+    @supports (gap: var(--flex-gap, 2em)) {
+        gap: var(--flex-gap, 2em);
+
+        & > * {
+            margin-top: 0;
+        }
+    }
 }
 
 .flex_column {
@@ -72,7 +83,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: var(--column-align, center);
-    gap: var(--flex-gap, 0.7em);
+
+    @supports (gap: var(--flex-gap, 0.7em)) {
+        gap: var(--flex-gap, 0.7em);
+    }
 }
 
 .side_padding {

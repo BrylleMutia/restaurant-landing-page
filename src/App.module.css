@@ -72,9 +72,21 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: var(--flex-gap, 2em);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.flex_row > * {
+  margin-top: 2em;
+}
+
+@supports (gap: var(--flex-gap, 2em)) {
+  .flex_row {
+    gap: var(--flex-gap, 2em);
+  }
+  .flex_row > * {
+    margin-top: 0;
+  }
 }
 
 .flex_column {
@@ -92,7 +104,12 @@ p {
   -webkit-box-align: var(--column-align, center);
       -ms-flex-align: var(--column-align, center);
           align-items: var(--column-align, center);
-  gap: var(--flex-gap, 0.7em);
+}
+
+@supports (gap: var(--flex-gap, 0.7em)) {
+  .flex_column {
+    gap: var(--flex-gap, 0.7em);
+  }
 }
 
 .side_padding {
