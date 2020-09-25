@@ -29,23 +29,12 @@
 
 .action__form {
   background: #fff;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.action__form input {
-  color: #333;
-  background: transparent;
-  border: none;
-  padding: 1em;
-  margin-left: 1em;
-  font-family: roboto;
 }
 
 .action__form button {
@@ -54,23 +43,11 @@
 }
 
 @media (max-width: 400px) {
-  .action__form {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+  .action__form input {
+    font-size: calc(1vw + 0.4rem);
   }
-}
-
-@media (max-width: 360px) {
-  .action__form {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-
-@media (max-width: 310px) {
-  .action__form {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+  .action__form button {
+    font-size: calc(1vw + 0.4rem);
   }
 }
 /*# sourceMappingURL=CallToAction.module.css.map */

@@ -27,18 +27,8 @@
 
     &__form {
         background: #fff;
-        flex-basis: 45%;
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
-
-        input {
-            color: #333;
-            background: transparent;
-            border: none;
-            padding: 1em;
-            margin-left: 1em;
-            font-family: roboto;
-        }
 
         button {
             padding: 0.5em 1em;
@@ -46,15 +36,14 @@
         }
 
         @media (max-width: 400px) {
-            transform: scale(0.9);
-        }
+            input {
+                font-size: calc(1vw + 0.4rem);
+            }
 
-        @media (max-width: 360px) {
-            transform: scale(0.8);
-        }
+            button {
+                font-size: calc(1vw + 0.4rem);
+            }
 
-        @media (max-width: 310px) {
-            transform: scale(0.7);
         }
     }
 }
