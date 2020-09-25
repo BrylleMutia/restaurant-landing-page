@@ -77,7 +77,7 @@ p {
 }
 
 .flex_row > * {
-  margin-top: 2em;
+  margin: 0.75em;
 }
 
 @supports (gap: var(--flex-gap, 2em)) {
