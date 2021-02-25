@@ -13,7 +13,7 @@ import instagram from "../images/affiliates/instagram.png";
 import paypal from "../images/affiliates/paypal.png";
 
 const Affiliates = () => {
-    const [partners, setPartners] = useState([
+    const [partners] = useState([
         {
             name: "Google",
             link: "https://www.google.com",
@@ -51,8 +51,8 @@ const Affiliates = () => {
                             <p>Some of the companies that worked with us to deliver better products for our beloved customers.</p>
                         </div>
                         <div style={{ "--flex-gap": "0" }} className={cx(flex_row, affiliates__main)}>
-                            {partners.map((partner) => (
-                                <Affiliate name={partner.name} link={partner.link} logo={partner.logo} />
+                            {partners.map((partner, index) => (
+                                <Affiliate key={index} name={partner.name} link={partner.link} logo={partner.logo} />
                             ))}
                         </div>
                     </div>

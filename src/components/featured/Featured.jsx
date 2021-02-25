@@ -22,50 +22,50 @@ import bestsellerThree from "../images/featured/featured-4.jpg";
 import cx from "classnames";
 
 const Featured = () => {
-    const [featured, setFeatured] = useState([
+    const [featured] = useState([
         {
-            recipeName: "Recipe Name",
+            recipeName: "Sweet Miso Soup",
             image: featuredOne,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Sweet Miso Soup",
             rating: 4.5,
         },
         {
-            recipeName: "Recipe Name",
+            recipeName: "Spanish Meatballs",
             image: featuredTwo,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Spanish Meatballs",
             rating: 4.4,
         },
         {
-            recipeName: "Recipe Name",
+            recipeName: "Moroccan Meatballs",
             image: featuredThree,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Moroccan Meatballs",
             rating: 4.4,
         },
         {
-            recipeName: "Recipe Name",
+            recipeName: "Douze-pointe Pies",
             image: featuredFour,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Douze-pointe pies",
             rating: 4.6,
         },
     ]);
 
-    const [best, setBest] = useState([
+    const [best] = useState([
         {
-            recipeName: "Recipe Name",
+            recipeName: "Cocoa Butter Cake",
             image: bestsellerOne,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Cocoa Butter Cake",
             rating: 4.9,
         },
         {
-            recipeName: "Recipe Name",
+            recipeName: "Shrimp Veggie Pizza",
             image: bestsellerTwo,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Shrimp Veggie Pizza",
             rating: 4.7,
         },
         {
-            recipeName: "Recipe Name",
+            recipeName: "Breakfast Pancakes",
             image: bestsellerThree,
-            description: "Lorem ipsum dolor sit amet.",
+            description: "Breakfast Pancakes",
             rating: 4.7,
         },
     ]);
@@ -90,12 +90,13 @@ const Featured = () => {
                     </div>
                     <div className={side_padding}>
                         <div className={cx(menu, flex_row)}>
-                            {featured.map((recipe) => (
+                            {featured.map((recipe, index) => (
                                 <Card 
                                     recipeName={recipe.recipeName} 
                                     image={recipe.image} 
                                     description={recipe.description} 
                                     rating={recipe.rating} 
+                                    key={index}
                                 />
                             ))}
                         </div>
@@ -107,12 +108,13 @@ const Featured = () => {
                         <div className={container}>
                             <h3 className={bestsellers__header}>Our bestsellers</h3>
                             <div className={flex_row}>
-                                {best.map((recipe) => (
+                                {best.map((recipe, index) => (
                                     <Card
                                         recipeName={recipe.recipeName}
                                         image={recipe.image}
                                         description={recipe.description}
                                         rating={recipe.rating}
+                                        key={index}
                                     />
                                 ))}
                                 <a className={cx(link, bestsellers__link)} href="#">

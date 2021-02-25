@@ -10,7 +10,7 @@ import gridThree from "../images/grid/grid-4.jpg";
 
 const Grid = () => {
     return (
-        <content>
+        <main>
             <div style={{ "--column-align": "start" }} className={grid} id="about">
                 <div className={grid__one}>
                     <img src={gridTwo} alt="grid-two" />
@@ -40,7 +40,7 @@ const Grid = () => {
                     </a>
                 </div>
             </div>
-        </content>
+        </main>
     );
 };
 

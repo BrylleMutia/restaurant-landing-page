@@ -2,8 +2,6 @@ import React from "react";
 import { footer, footer__contact, footer__download, footer__link, footer__links, contact_icons } from "./Footer.module.css";
 import { container, side_padding } from "../../App.module.css";
 
-import cx from "classnames";
-
 import facebook from "../images/footer/facebook.png";
 import twitter from "../images/footer/twitter.png";
 import gmail from "../images/footer/gmail.png";

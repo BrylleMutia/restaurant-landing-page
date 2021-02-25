@@ -1,6 +1,6 @@
 import React from "react";
 import { download, download__buttons, download__image, download__message, download__float } from "./Download.module.css";
-import { container, side_padding, vertical_spacer, horizontal_spacer, button, flex_row, img_button } from "../../App.module.css";
+import { container, side_padding, vertical_spacer, horizontal_spacer, img_button } from "../../App.module.css";
 
 import cx from "classnames";
 import downloadOne from "../images/download/download-1.jpg";
